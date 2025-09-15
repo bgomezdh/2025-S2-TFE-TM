@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header id="header">
+        <section class="cajaLogo">
+            <img src="./img/logo-laptop.avif" alt="Logo">
+        </section>
+        <nav class="cajaBarraNav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Carreras</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <section class="cajaFormulario">
+            <p class="parrafoForm">Formulario</p>
+        </section>
+
+    </header>
+
+
+    <main id="main">
+        <section class="cajaFormularioCompleto">
+
+            <form action="./resultadoBusqueda.html" method="get">
+
+                <div>
+                    <label for="">Nombre Usuario</label>
+                    <input type="text" name="nombreUsuario" value="">
+                </div>
+
+                <div>
+                    <!-- <label for="">Edad del Usuario</label> -->
+                    <input type="number" name="edadUsuario" id="" placeholder="Edad del Usuario">
+                </div>
+
+                <div>
+                    <input type="email" name="emailUsuario" value="@gmail.com" >
+                </div>
+
+                <div>
+                    <input type="password" name="passUsuario" placeholder="Ingrese Contraseña">
+                </div>
+
+                <div>
+                    <label for="">Tiene asistencia?</label>
+                    <span>No</span> <input type="radio" name="asistencia" value="No" checked>
+                    <span>Si</span> <input type="radio" name="asistencia" value="Si">
+                </div>
+
+
+                <div>
+                    <p for="">Paises</p>
+                    <input type="checkbox" name="paises" value="Argentina" checked> <span>Argentina</span>
+                    <input type="checkbox" name="paises" value="Brasil"> <span>Brasil</span>
+                    <input type="checkbox" name="paises" value="Peru"> <span>Peru</span>
+                    <input type="checkbox" name="paises" value="Venezuela"> <span>Venezuela</span>
+                </div>
+
+                <div>
+                    <button type="reset">Borrar Info</button>
+
+                    <button type="submit">Enviar</button>
+                </div>
+
+            </form>
+
+        </section>
+    </main>
+    
+</body>
+</html>

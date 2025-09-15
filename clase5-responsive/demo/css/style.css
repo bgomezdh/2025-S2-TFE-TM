@@ -1,0 +1,87 @@
+/* Estilos laptop 1200px */
+body {
+  background-color: rgb(243, 242, 242);
+  margin: 0px;
+}
+
+#header {
+  background-color: rgb(211, 211, 211);
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cajaLogo img {
+  width: 200px;
+}
+
+.cajaBarraNav ul {
+  padding: 0px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.cajaFormularioCompleto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+form{
+    background-color: rgb(206, 206, 206);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form div{
+    margin-top: 5px;
+}
+
+/* Estilos tablet 768px */
+@media (max-width: 768px) {
+    .cajaLogo, .cajaBarraNav, .cajaFormulario{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #header{
+        height: 140px;
+    }
+
+    .cajaBarraNav ul{
+        list-style-type: none;
+    }
+
+ 
+}
+
+/* Estilos Telefono 420px */
+@media(max-width: 420px) {
+    
+    .cajaBarraNav ul{
+        flex-direction: column;
+    }
+
+    #header{
+        height: 250px;
+    }
+
+    .parrafoForm{
+        display: none;
+    }
+
+}

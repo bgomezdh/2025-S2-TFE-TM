@@ -1,0 +1,27 @@
+/* Selectores de etiqueta */
+
+h1{
+    color:rgb(99, 174, 25);
+    display: none;
+}
+
+.parrafoEspecial{
+    font-size: 30px;
+}
+
+.parrafoRojo{
+    color: red;
+}
+
+/* lectores de ID */
+
+#cuerpo{
+    background-image: url("../img/fondo.png");
+    background-position: top;
+    background-size: 1100px;
+    background-repeat: no-repeat;
+}
+
+.parrafoEspecial{
+    background-color: green;
+}

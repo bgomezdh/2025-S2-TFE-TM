@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: aqua;
+}
+
+.main{
+    background-color: brown;
+}
+
+.footer{
+    background-color: cadetblue;
+}
+
+.section{
+    background-color: gray;
+}
+
+.sectBra{
+    color: yellow;
+}
+
+.sectArg{
+    color: aqua;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.negrita, .span{
+    background-color: green;
+}
+
+/* modelo de caja */
+
+
+.caja{
+    background-color: rgb(41, 89, 232);
+    color: white;
+    width: 120px;
+    height: 130px;
+    padding: 12px;
+    border: solid 3px green;
+    margin: 30px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,3 +1,9 @@
+//recuperar QS ?idProv=70
+let qs = location.search;  // "?idProv=70"
+let qsObj = new URLSearchParams(qs);
+
+let idBuscado = qsObj.get("idProv");
+
 let URL_PROV = "https://apis.datos.gob.ar/georef/api/v2.0/provincias";
 
 let lista = document.querySelector(".lista");
@@ -7,15 +13,17 @@ fetch(URL_PROV)
     return res.json();
 })
 .then(function(data) {
-    console.log(data);
-    
+
     let contenido = "";
 
     for (let i = 0; i < data.provincias.length; i++) {
-        const element = data.provincias[i];
 
         
-        contenido +=  `<li> <a href="./searchResults.html?idProv=${element.id}">${element.nombre}</a> </li>`;
+        const element = data.provincias[i];
+
+        if (element.nombre == idBuscado) {
+               contenido +=  `<li>${element.nombre}</li>`;
+        }
         
     }
 
@@ -26,7 +34,3 @@ fetch(URL_PROV)
     console.log(errores);
     
 });
-
-
-
-
